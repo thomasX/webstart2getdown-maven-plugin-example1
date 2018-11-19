@@ -1,5 +1,5 @@
 # The URL from which the client is downloaded
-appbase = http://github.io/thomasX/getdown-maven-plugin-example1/getdown/
+appbase = http://thomasx.github.io/webstart2getdown-maven-plugin-example1/getdown/
 
 # UI Configuration
 ui.name = webstart2getdown-maven-plugin-example1
