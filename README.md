@@ -10,5 +10,12 @@ create getdown.txt in [homedirectory/example] with one line in it:
 
 `appbase = https://thomasx.github.io/webstart2getdown-maven-plugin-example1/getdown/`
 
+switch to [homedirectory]
+
+start the application with the following command: 
+`java -jar getdown-1.7.1.jar example`
+
+
+
 
 
