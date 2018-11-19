@@ -1,4 +1,4 @@
 getdown.txt = 0f0b958658487907acaaa379c23406afcc4df5b5de6ceccc1f1fc42a7ffe06b1
-lib/webstart2getdown-maven-plugin-example1-0.0.5-SNAPSHOT.jar = 59556e8e56d3463fc70503fce98bb9ebded1e879550792e5318fe11261a01862
-lib/joda-time-2.3.jar = 6f89fccad34e46dc43326a13a71d86e5c7a87db4730a4820b76481dab5b51c2d
-digest2.txt = 85e48fe2ea922e6e9f809a92089130429b11b36a4f4b85e5b0f3d03374d99ce6
+lib/webstart2getdown-maven-plugin-example1-0.0.5-SNAPSHOT.jar = b729c36fb34964506ed2a50522c7d1bf4af8518619e139ed90ce9c2c7688cb71
+lib/joda-time-2.3.jar = c9802090dc527c2b5a1940124adb3686467ca13fff398f6770b14c8212c3ab56
+digest2.txt = e7aed37a9085a77d2e64c9a939538aa31ed4da64079e3aa8b5b981b4f3e2932d
