@@ -178,7 +178,7 @@
 			<plugin>
 				<groupId>info.margreiter.getdown</groupId>
 				<artifactId>webstart2getdown-maven-plugin</artifactId>
-				<version>0.0.5-SNAPSHOT</version>
+				<version>1.0.0</version>
 				<executions>
 					<execution>	
 					<phase>package</phase>
@@ -229,16 +229,14 @@
 		</plugins>
 	</build>
 	<pluginRepositories>
-		<!--
 		<pluginRepository>
 			<id>getdown-maven-github-repo</id>
-			 <url>https://thomasx.github.io/getdown-maven-plugin/</url>
+			 <url>https://thomasx.github.io/webstart2getdown-maven-plugin/</url>
 			<snapshots>
 				<enabled>true</enabled>
 				<updatePolicy>always</updatePolicy>
 			</snapshots>
 		</pluginRepository>
-		--> 
 	</pluginRepositories>
 	<repositories>
 		<!-- 
