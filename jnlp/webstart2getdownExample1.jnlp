@@ -2,7 +2,7 @@
 <jnlp 
 	spec="1.0+" 
 	codebase="http://github.io/thomasX/webstart2getdown-maven-plugin-example1/jnlp" 
-	href="$outputFile"
+	href="webstart2getdownExample1.jnlp"
 	packEnabled="false">
  <information>
     <title>webstart2getdown-maven-plugin-example1</title>
@@ -25,9 +25,12 @@
     <j2se version="1.8+" initial-heap-size="512m" max-heap-size="1024m" />
     <property name="jnlp.versionEnabled" value="false"/>
     <property name="jnlp.packEnabled" value="false"/>
-    $dependencies
+        
+    <jar href="lib/webstart2getdown-maven-plugin-example1-0.0.5-SNAPSHOT.jar" main="true"/>
+    <jar href="lib/joda-time-2.3.jar"/>
+
  </resources>
- <application-desc main-class="$mainClass">
+ <application-desc main-class="info.margreiter.getdown.maven.plugin.example.example1.MyApp">
   <!--REPLACE_WITH_ARGUMENTS-->
  </application-desc>
 </jnlp>
