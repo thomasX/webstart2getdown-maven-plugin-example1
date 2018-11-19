@@ -191,7 +191,7 @@
 						<configuration>
 						    <jnlpfile>${project.build.directory}/jnlp/webstart2getdownExample1.jnlp</jnlpfile>
 							<appdir>${project.build.directory}/getdown/</appdir>
-							<appbase>http://thomasx.github.io/webstart2getdown-maven-plugin-example1/getdown/</appbase>
+							<appbase>https://thomasx.github.io/webstart2getdown-maven-plugin-example1/getdown/</appbase>
 														
 			            	<!-- we need to override passwords easily from the command line. ${keypass} -->			            	
 							<!-- path or URI (if empty, the default keystore ".keystore"-file in the user-homedir is used) -->
