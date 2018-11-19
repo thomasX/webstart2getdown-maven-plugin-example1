@@ -1,1 +1,1 @@
-# webstart2getdown-maven-plugin-example1
+# Getdown Maven Plugin Example1
