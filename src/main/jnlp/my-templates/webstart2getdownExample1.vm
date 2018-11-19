@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <jnlp 
 	spec="1.0+" 
-	codebase="http://thomasx.github.io/webstart2getdown-maven-plugin-example1/jnlp" 
+	codebase="https://thomasx.github.io/webstart2getdown-maven-plugin-example1/jnlp" 
 	href="$outputFile"
 	packEnabled="false">
  <information>
