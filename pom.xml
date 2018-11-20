@@ -175,8 +175,7 @@
    		</plugin>
             
             
-            
-            
+      
             
             
 			<!-- Create the update directory, stubs etc -->
@@ -255,7 +254,7 @@
 				<dependencies>
 				</dependencies>
 				<configuration>
-					<controlDir>src/main/deb/control</controlDir>
+					<controlDir>src/main/installer/debian/control</controlDir>
 					<skipPOMs>false</skipPOMs>
 					<installDir>/usr/lib/example1</installDir>
 					<deb>${project.basedir}/target/example1.deb</deb>
@@ -275,7 +274,7 @@
 						</data>
 						<data>
 							<type>directory</type>
-							<src>${basedir}/src/main/scripts</src>
+							<src>${basedir}/src/main/installer/debian/scripts</src>
 							<includes>*</includes>
 							<mapper>
 								<type>perm</type>
@@ -301,7 +300,7 @@
 						</data>
 						<data>
 							<type>directory</type>
-							<src>${basedir}/src/main/applications</src>
+							<src>${basedir}/src/main/installer/debian/applications</src>
 							<includes>*</includes>
 							<mapper>
 								<type>perm</type>
