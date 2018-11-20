@@ -192,9 +192,9 @@
 						    <jnlpfile>${project.build.directory}/jnlp/webstart2getdownExample1.jnlp</jnlpfile>
 							<appdir>${project.build.directory}/getdown/</appdir>
 							<appbase>https://thomasx.github.io/webstart2getdown-maven-plugin-example1/getdown/</appbase>
-							<bgImage>${project.build.directory}/jnlp/img/w2gImage_256_256.png</bgImage>		
+							<bgImage>img/w2gImage_256_256.png</bgImage>		
 							<bgColor>9090FF</bgColor>	
-							<iconImage>${project.build.directory}/jnlp/img/w2gicon_16_16.gif</iconImage>
+							<iconImage>img/w2gicon_16_16.gif</iconImage>
 							<progressbarColor>0000FF</progressbarColor>
 							<progressTextColor>F7FF14</progressTextColor>				
 			            	<!-- we need to override passwords easily from the command line. ${keypass} -->			            	
