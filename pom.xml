@@ -231,7 +231,6 @@
 		</plugins>
 	</build>
 	<pluginRepositories>
-	<!-- 
 		<pluginRepository>
 			<id>getdown-maven-github-repo</id>
 			 <url>https://thomasx.github.io/webstart2getdown-maven-plugin/</url>
@@ -240,7 +239,6 @@
 				<updatePolicy>always</updatePolicy>
 			</snapshots>
 		</pluginRepository>
-	 -->
 	</pluginRepositories>
 	<repositories>
 		<!-- 
