@@ -355,6 +355,46 @@
 					</dataSet>
 				</configuration>
 			</plugin>
+			
+			
+			
+			
+			<!-- create the OSX installer -->
+			<plugin>
+				<groupId>com.agiliumlabs.osxappbundle</groupId>
+				<artifactId>osxappbundle-maven-plugin</artifactId>
+				<version>1.0.1</version>
+				<configuration>
+					<buildDirectory>target/osx/example1</buildDirectory>
+					<bundleName>example1</bundleName>
+					<zipFile>${basedir}/target/osx/example1-app.zip</zipFile>
+					<excludeArtifacts>true</excludeArtifacts>
+					<javaApplicationStub>${basedir}/src/main/installer/osx/osx-stub</javaApplicationStub>
+					<mainClass>info.margreiter.getdown.maven.plugin.example.example1.MyApp</mainClass>
+					<additionalClasspath>
+						<path>getdown.jar</path>
+					</additionalClasspath>
+					<additionalResources>
+						<fileSet>
+							<directory>${basedir}/target/getdown</directory>
+							<includes>
+								<include>**/*</include>
+							</includes>
+						</fileSet>
+					</additionalResources>
+				</configuration>
+				<executions>
+					<execution>
+						<phase>package</phase>
+						<goals>
+							<goal>bundle</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+					
+			
+			
 		</plugins>
 	</build>
 	<pluginRepositories>
