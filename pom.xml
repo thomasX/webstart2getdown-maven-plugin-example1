@@ -10,6 +10,11 @@
 		<artifactId>joda-time</artifactId>
 		<version>2.3</version>
 	</dependency>
+	<dependency>
+		<groupId>com.threerings</groupId>
+		<artifactId>getdown</artifactId>
+		<version>1.7.1</version>
+	</dependency>
   </dependencies>
 
 		<build>
@@ -232,6 +237,84 @@
 			</plugin>
 			
 		
+			<!-- create a Deb for Debian and based systems such as Ubuntu, Mint -->
+			<plugin>
+				<artifactId>jdeb</artifactId>
+				<groupId>org.vafer</groupId>
+				<version>1.2</version>
+				<executions>
+					<execution>
+						<phase>package</phase>
+						<goals>
+							<goal>jdeb</goal>
+						</goals>
+						<configuration>
+						</configuration>
+					</execution>
+				</executions>
+				<dependencies>
+				</dependencies>
+				<configuration>
+					<controlDir>src/main/deb/control</controlDir>
+					<skipPOMs>false</skipPOMs>
+					<installDir>/usr/lib/example1</installDir>
+					<deb>${project.basedir}/target/example1.deb</deb>
+					<dataSet>
+						<data>
+							<type>directory</type>
+							<src>target/getdown</src>
+							<includes>*.*</includes>
+							<mapper>
+								<type>perm</type>
+								<strip>1</strip>
+								<prefix>/usr/lib/example1</prefix>
+								<user>root</user>
+								<group>root</group>
+								<filemode>755</filemode>
+							</mapper>
+						</data>
+						<data>
+							<type>directory</type>
+							<src>${basedir}/src/main/scripts</src>
+							<includes>*</includes>
+							<mapper>
+								<type>perm</type>
+								<strip>1</strip>
+								<prefix>/usr/bin</prefix>
+								<user>root</user>
+								<group>root</group>
+								<filemode>755</filemode>
+							</mapper>
+						</data>
+						<data>
+							<type>directory</type>
+							<src>${project.build.directory}/jnlp/img</src>
+							<includes>w2gImage_256_256.png</includes>
+							<mapper>
+								<type>perm</type>
+								<strip>1</strip>
+								<prefix>/usr/share/pixmaps</prefix>
+								<user>root</user>
+								<group>root</group>
+								<filemode>755</filemode>
+							</mapper>
+						</data>
+						<data>
+							<type>directory</type>
+							<src>${basedir}/src/main/applications</src>
+							<includes>*</includes>
+							<mapper>
+								<type>perm</type>
+								<strip>1</strip>
+								<prefix>/usr/share/applications</prefix>
+								<user>root</user>
+								<group>root</group>
+								<filemode>755</filemode>
+							</mapper>
+						</data>
+					</dataSet>
+				</configuration>
+			</plugin>
 		</plugins>
 	</build>
 	<pluginRepositories>

@@ -1,0 +1,16 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=example1
+Name[en_GB]=example1
+GenericName=example1
+GenericName[en_GB]=example1
+Comment=example1
+Icon=example1.png
+TryExec=example1
+Exec=example1
+Terminal=false
+# Categorie entry according to version 1.0 of
+# http://www.freedesktop.org/wiki/Specifications/menu-spec
+Categories=GNOME;Network;
+Encoding=UTF-8
