@@ -6,9 +6,11 @@ ui.name = webstart2getdown-maven-plugin-example1
 
 # Background Image
 ui.background_image = img/w2gImage_256_256.png
+ resource = img/w2gImage_256_256.png
 
 # Icon Image
 ui.icon = img/w2gicon_16_16.gif
+ resource = img/w2gicon_16_16.gif
 
 # Progressbar Color
 ui.progress_bar = 0000FF
