@@ -10,8 +10,8 @@
     <description>no description available</description> 
     <description kind="short">clever &amp; smart"</description> 
     <homepage href="https://github.com/thomasX/webstart2getdown-maven-plugin-example1"/> 
-    <icon kind="default" href="https://thomasx.github.io/webstart2getdown-maven-plugin-example1/jnlp/img/FERPS_256x256_FELDER-Group_2016_4c_3D.png" width="256" height="256"/>
-    <icon kind="shortcut" href="https://thomasx.github.io/webstart2getdown-maven-plugin-example1/jnlp/img/FERPS_ONLY_16x16.gif"  width="16" height="16"/>
+    <icon kind="default" href="https://thomasx.github.io/webstart2getdown-maven-plugin-example1/jnlp/img/w2gImage_256_256.png" width="256" height="256"/>
+    <icon kind="shortcut" href="https://thomasx.github.io/webstart2getdown-maven-plugin-example1/jnlp/img/w2gicon_16_16.gif"  width="16" height="16"/>
     <offline-notallowed/>
     <shortcut online="true">
     	<desktop/>
@@ -26,7 +26,7 @@
     <property name="jnlp.versionEnabled" value="false"/>
     <property name="jnlp.packEnabled" value="false"/>
         
-    <jar href="lib/webstart2getdown-maven-plugin-example1-0.0.5-SNAPSHOT.jar" main="true"/>
+    <jar href="lib/webstart2getdown-maven-plugin-example1-1.0.2.jar" main="true"/>
     <jar href="lib/joda-time-2.3.jar"/>
 
  </resources>

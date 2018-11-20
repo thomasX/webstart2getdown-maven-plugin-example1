@@ -4,8 +4,14 @@ appbase = https://thomasx.github.io/webstart2getdown-maven-plugin-example1/getdo
 # UI Configuration
 ui.name = webstart2getdown-maven-plugin-example1
 
+# Background Image
+ui.background_image = https://thomasx.github.io/webstart2getdown-maven-plugin-example1/jnlp/img/w2gImage_256_256.png
+
+# Icon Image
+ui.icon = https://thomasx.github.io/webstart2getdown-maven-plugin-example1/jnlp/img/w2gicon_16_16.gif
+
 # Application jar files
-code = lib/webstart2getdown-maven-plugin-example1-0.0.5-SNAPSHOT.jar
+code = lib/webstart2getdown-maven-plugin-example1-1.0.2.jar
 code = lib/joda-time-2.3.jar
 
 # The main entry point for the application
