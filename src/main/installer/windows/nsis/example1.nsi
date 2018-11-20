@@ -1,4 +1,4 @@
-;MyApp
+;Example1
 
 ;--------------------------------
 ;Include Modern UI
@@ -10,7 +10,7 @@
 ;General
 
   ;Name and file
-  Name "MyApp"
+  Name "Example1"
   
   ; Handled by plugin
   ;OutFile "${PROJECT_BUILD_DIR}\windows\SetupExample1.exe"
@@ -74,7 +74,7 @@
 ;--------------------------------
 ;Installer Sections
 
-Section "MyApp" MyApp
+Section "Example1" Example1
 
   SetOutPath "$INSTDIR"
   
