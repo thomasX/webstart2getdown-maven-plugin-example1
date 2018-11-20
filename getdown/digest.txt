@@ -1,4 +1,4 @@
-getdown.txt = 83286963ed2f0c892c3afa7af74a0fb2
+getdown.txt = db606564a0e6ff23bc10cd681e0c53da
 lib/webstart2getdown-maven-plugin-example1-1.0.2.jar = d2e6391d0b4bb39e93f17043a4f59ddb
 lib/joda-time-2.3.jar = 5f91e901dd7d89b4830d747ff421f058
-digest.txt = 5e68691596a98b29b4807f24dd653d4d
+digest.txt = de0a7cb1fdb92b38a2747d454257cce5

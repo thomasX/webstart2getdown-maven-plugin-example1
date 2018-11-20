@@ -5,10 +5,10 @@ appbase = https://thomasx.github.io/webstart2getdown-maven-plugin-example1/getdo
 ui.name = webstart2getdown-maven-plugin-example1
 
 # Background Image
-ui.background_image = C:\Users\f3thomas\git\webstart2getdown-maven-plugin-example1\target/jnlp/img/w2gImage_256_256.png
+ui.background_image = img/w2gImage_256_256.png
 
 # Icon Image
-ui.icon = C:\Users\f3thomas\git\webstart2getdown-maven-plugin-example1\target/jnlp/img/w2gicon_16_16.gif
+ui.icon = img/w2gicon_16_16.gif
 
 # Progressbar Color
 ui.progress_bar = 0000FF
