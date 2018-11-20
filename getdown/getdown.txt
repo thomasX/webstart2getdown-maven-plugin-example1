@@ -24,6 +24,7 @@ ui.background = 9090FF
 # Application jar files
 code = lib/webstart2getdown-maven-plugin-example1-1.0.2.jar
 code = lib/joda-time-2.3.jar
+code = lib/getdown-1.7.1.jar
 
 # The main entry point for the application
 class = info.margreiter.getdown.maven.plugin.example.example1.MyApp

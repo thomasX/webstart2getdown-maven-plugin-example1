@@ -28,6 +28,7 @@
         
     <jar href="lib/webstart2getdown-maven-plugin-example1-1.0.2.jar" main="true"/>
     <jar href="lib/joda-time-2.3.jar"/>
+    <jar href="lib/getdown-1.7.1.jar"/>
 
  </resources>
  <application-desc main-class="info.margreiter.getdown.maven.plugin.example.example1.MyApp">
