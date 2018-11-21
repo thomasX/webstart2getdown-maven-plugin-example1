@@ -106,3 +106,8 @@ The following section shows the webstart2getdown-maven-plugin configuration in t
 ***
 
 **by** [thomasX](https://github.com/thomasX) and [Maz47](https://github.com/Maz47)
+
+<br>
+<br>
+
+[:arrow_up:](https://github.com/thomasX/webstart2getdown-maven-plugin-example1#getdown-maven-plugin-example-1)
