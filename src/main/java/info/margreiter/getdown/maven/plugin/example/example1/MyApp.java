@@ -8,11 +8,10 @@ import java.awt.event.WindowEvent;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 
-import org.joda.time.format.DateTimeFormatter;
-import org.joda.time.format.ISODateTimeFormat;
 /**
  * 
  * created: 14.11.2018
+ * 
  * @author f3thomas
  *
  */
@@ -23,15 +22,12 @@ public class MyApp extends JFrame {
 	public MyApp(String[] args) {
 		super("MyApp");
 		getContentPane().setLayout(new BorderLayout());
-		setPreferredSize(new Dimension(500,500));
-		Object msg = (null==args) ? "No startingparameters !":args;
-		
-		DateTimeFormatter parser = ISODateTimeFormat.dateTime();
+		setPreferredSize(new Dimension(500, 500));
+		Object msg = (null == args) ? "No startingparameters !" : args;
+
 		org.joda.time.DateTime dateTime = new org.joda.time.DateTime();
-		
-		
-		String timestring		;
-		getContentPane().add(new JLabel(    " [ "+dateTime.toString()+" ]   Hello World! (" + msg + ") "));
+
+		getContentPane().add(new JLabel("[ " + dateTime.toString() + " ] - Hello World! (" + msg + ")"));
 		pack();
 		setVisible(true);
 		addWindowListener(new WindowAdapter() {
@@ -42,7 +38,6 @@ public class MyApp extends JFrame {
 		});
 	}
 
-	
 	public static void main(String[] args) {
 		new MyApp(args);
 	}
