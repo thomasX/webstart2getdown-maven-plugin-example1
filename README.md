@@ -102,3 +102,7 @@ The following section shows the webstart2getdown-maven-plugin configuration in t
   ...
 </project>
 ```
+
+***
+
+**by** [thomasX](https://github.com/thomasX) and [Maz47](https://github.com/Maz47)
