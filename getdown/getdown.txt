@@ -1,6 +1,9 @@
 # The URL from which the client is downloaded
 appbase = https://thomasx.github.io/webstart2getdown-maven-plugin-example1/getdown/
 
+# getdownclient 
+resource = getdown.jar
+
 # Allow offline execution
 allow_offline = false
 
@@ -47,9 +50,11 @@ ui.mac_doc_icon = img/w2gicon_16_16.gif
 resource = img/w2gicon_16_16.gif
 
 # Application jar files
-code = lib/webstart2getdown-maven-plugin-example1-1.7.1.jar
+code = lib/webstart2getdown-maven-plugin-example1-1.8.0.jar
 code = lib/joda-time-2.3.jar
-code = lib/getdown-1.7.1.jar
+code = lib/getdown-launcher-1.8.0.jar
+code = lib/getdown-core-1.8.0.jar
+code = lib/samskivert-1.2.jar
 
 # The main entry point for the application
 class = info.margreiter.getdown.maven.plugin.example.example1.MyApp
