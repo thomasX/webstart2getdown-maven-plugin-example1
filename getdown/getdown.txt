@@ -1,5 +1,5 @@
 # The URL from which the client is downloaded
-appbase = http://thomasx.github.io/webstart2getdown-maven-plugin-example1/getdown/
+appbase = https://thomasx.github.io/webstart2getdown-maven-plugin-example1/getdown/
 
 # Allow offline execution
 allow_offline = false
