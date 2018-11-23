@@ -1,0 +1,2 @@
+jvmarg = -Xms512m
+jvmarg = -Xmx1024m
