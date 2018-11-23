@@ -1,28 +1,53 @@
 # The URL from which the client is downloaded
-appbase = https://thomasx.github.io/webstart2getdown-maven-plugin-example1/getdown/
+appbase = https://thomasX.github.io/webstart2getdown-maven-plugin/getdown/
+
+# Allow offline execution
+allow_offline = false
 
 # UI Configuration
 ui.name = webstart2getdown-maven-plugin-example1
 
+# Background Color
+ui.background = FF0000
+
 # Background Image
-ui.background_image = img/w2gImage_256_256.png
- resource = img/w2gImage_256_256.png
+ui.background_image = img/w2gImage.png
+resource = img/w2gImage.png
 
 # Icon Image
 ui.icon = img/w2gicon_16_16.gif
- resource = img/w2gicon_16_16.gif
+resource = img/w2gicon_16_16.gif
+
+# Progressbar position
+ui.progress = 50,250,600,20
 
 # Progressbar Color
-ui.progress_bar = 0000FF
+ui.progress_bar = 00FF05
 
-# Progressbar TextColor
-ui.progress_text = F7FF14
+# Progressbar Text Color
+ui.progress_text = 000000
 
-# BackgroundColor  eg: ui.background = 3399AA
-ui.background = 9090FF
+# Status Dimension
+ui.status = 60,220,580,20
+
+# Status Text Color
+ui.status_text = 000000
+
+# Hide UI Decorations
+ui.hide_decorations = false
+
+# UI minimum show time
+ui.min_show_seconds = 10
+
+# Install error URL
+ui.install_error = https://github.com/thomasX/webstart2getdown-maven-plugin
+
+# UI mac docicon
+ui.mac_doc_icon = img/w2gicon_16_16.gif
+resource = img/w2gicon_16_16.gif
 
 # Application jar files
-code = lib/webstart2getdown-maven-plugin-example1-1.0.2.jar
+code = lib/webstart2getdown-maven-plugin-example1-1.7.1.jar
 code = lib/joda-time-2.3.jar
 code = lib/getdown-1.7.1.jar
 
@@ -34,4 +59,8 @@ jvmarg = -Xms512m
 
 # Max. Heap Size
 jvmarg = -Xmx1024m
+
+# JVM Arguments
+
+# APP Arguments
 

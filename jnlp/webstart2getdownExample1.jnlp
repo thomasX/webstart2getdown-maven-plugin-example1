@@ -26,7 +26,7 @@
     <property name="jnlp.versionEnabled" value="false"/>
     <property name="jnlp.packEnabled" value="false"/>
         
-    <jar href="lib/webstart2getdown-maven-plugin-example1-1.0.2.jar" main="true"/>
+    <jar href="lib/webstart2getdown-maven-plugin-example1-1.7.1.jar" main="true"/>
     <jar href="lib/joda-time-2.3.jar"/>
     <jar href="lib/getdown-1.7.1.jar"/>
 
