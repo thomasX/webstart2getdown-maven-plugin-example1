@@ -183,11 +183,11 @@
 							<ui_background_image>img/w2gImage.png</ui_background_image>
 							<ui_error_background></ui_error_background>
 							<ui_icon>img/w2gicon_16_16.gif</ui_icon>
-							<ui_progress>10,310,260,20</ui_progress>
+							<ui_progress>50,250,600,20</ui_progress>
 							<ui_progress_bar>00FF05</ui_progress_bar>
 							<ui_progress_text>000000</ui_progress_text>
 							<ui_progress_image></ui_progress_image>
-							<ui_status>10,285,260,20</ui_status>
+							<ui_status>60,220,580,20</ui_status>
 							<ui_status_text>000000</ui_status_text>
 							<ui_text_shadow></ui_text_shadow>
 							<ui_hide_decorations>false</ui_hide_decorations>
