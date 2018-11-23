@@ -174,7 +174,7 @@
 						</goals>
 						<configuration>
 							<jnlpfile>${project.build.directory}/jnlp/webstart2getdownExample1.jnlp</jnlpfile>
-							<appbase>https://thomasX.github.io/webstart2getdown-maven-plugin/getdown/</appbase>
+							<appbase>http://thomasx.github.io/webstart2getdown-maven-plugin-example1/getdown/</appbase>
 							<appdir>${project.build.directory}/getdown/</appdir>
 							<version></version>
 							<allow_offline>false</allow_offline>
