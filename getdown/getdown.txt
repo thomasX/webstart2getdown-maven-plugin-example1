@@ -14,8 +14,8 @@ ui.name = webstart2getdown-maven-plugin-example1
 ui.background = FF0000
 
 # Background Image
-ui.background_image = img/applicationSplash.png
-resource = img/applicationSplash.png
+ui.background_image = img/w2gImage.png
+resource = img/w2gImage.png
 
 # Icon Image
 ui.icon = img/w2gicon_16_16.gif
@@ -55,7 +55,4 @@ code = lib/samskivert-1.2.jar
 
 # The main entry point for the application
 class = info.margreiter.getdown.maven.plugin.example.example1.MyApp
-
-# minimum Java Version requested
-java_min_version = 1080192
 
