@@ -181,7 +181,7 @@
 							<allow_offline>false</allow_offline>
 
 							<ui_background>FF0000</ui_background>
-							<ui_background_image>img/applicationSplash.png</ui_background_image>
+							<ui_background_image>img/w2gImage.png</ui_background_image>
 							<ui_error_background></ui_error_background>
 							<ui_icon>img/w2gicon_16_16.gif</ui_icon>
 							<ui_progress>60,340,600,20</ui_progress>
@@ -193,10 +193,11 @@
 							<ui_text_shadow></ui_text_shadow>
 							<ui_hide_decorations>false</ui_hide_decorations>
 							<ui_min_show_seconds>10</ui_min_show_seconds>
+							<ui_mac_dock_icon>img/w2gicon_16_16.gif</ui_mac_dock_icon>
+							
 							<!-- error -> classcast exception String[] to String
 							<ui_install_error>https://github.com/thomasX/webstart2getdown-maven-plugin</ui_install_error>
 							 -->
-							<ui_mac_dock_icon>img/w2gicon_16_16.gif</ui_mac_dock_icon>
 
 							<jvmargs>
 								<jvmarg></jvmarg>
