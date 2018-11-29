@@ -214,7 +214,8 @@
 								<java_location></java_location>
 							</java_locations>
 							
-							<java_min_version>1080192</java_min_version>
+							<java_min_version></java_min_version>
+							
 							<keystore>${project.basedir}/src/main/keys/demokey.jks</keystore>
 							<storepass>changeit</storepass>
 							<alias>demokey</alias>
