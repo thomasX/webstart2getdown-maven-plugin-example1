@@ -14,15 +14,15 @@ ui.name = webstart2getdown-maven-plugin-example1
 ui.background = FF0000
 
 # Background Image
-ui.background_image = img/w2gImage.png
-resource = img/w2gImage.png
+ui.background_image = img/applicationSplash.png
+resource = img/applicationSplash.png
 
 # Icon Image
 ui.icon = img/w2gicon_16_16.gif
 resource = img/w2gicon_16_16.gif
 
 # Progressbar position
-ui.progress = 50,250,600,20
+ui.progress = 60,340,600,20
 
 # Progressbar Color
 ui.progress_bar = 00FF05
@@ -31,7 +31,7 @@ ui.progress_bar = 00FF05
 ui.progress_text = 000000
 
 # Status Dimension
-ui.status = 60,220,580,20
+ui.status = 60,310,600,20
 
 # Status Text Color
 ui.status_text = 000000
@@ -42,20 +42,20 @@ ui.hide_decorations = false
 # UI minimum show time
 ui.min_show_seconds = 10
 
-# Install error URL
-ui.install_error = https://github.com/thomasX/webstart2getdown-maven-plugin
-
 # UI mac docicon
 ui.mac_doc_icon = img/w2gicon_16_16.gif
 resource = img/w2gicon_16_16.gif
 
 # Application jar files
-code = lib/webstart2getdown-maven-plugin-example1-1.8.0.jar
+code = lib/webstart2getdown-maven-plugin-example1-1.8.2.jar
 code = lib/joda-time-2.3.jar
-code = lib/getdown-launcher-1.8.0.jar
-code = lib/getdown-core-1.8.0.jar
+code = lib/getdown-launcher-1.8.2.jar
+code = lib/getdown-core-1.8.2.jar
 code = lib/samskivert-1.2.jar
 
 # The main entry point for the application
 class = info.margreiter.getdown.maven.plugin.example.example1.MyApp
+
+# minimum Java Version requested
+java_min_version = 1080192
 
