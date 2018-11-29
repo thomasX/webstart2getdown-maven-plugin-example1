@@ -10,7 +10,7 @@
     <description>no description available</description> 
     <description kind="short">clever &amp; smart"</description> 
     <homepage href="https://github.com/thomasX/webstart2getdown-maven-plugin-example1"/> 
-    <icon kind="default" href="https://thomasx.github.io/webstart2getdown-maven-plugin-example1/jnlp/img/w2gImage_256_256.png" width="256" height="256"/>
+    <icon kind="default" href="https://thomasx.github.io/webstart2getdown-maven-plugin-example1/jnlp/img/applicationSplash.png" width="256" height="256"/>
     <icon kind="shortcut" href="https://thomasx.github.io/webstart2getdown-maven-plugin-example1/jnlp/img/w2gicon_16_16.gif"  width="16" height="16"/>
     <offline-notallowed/>
     <shortcut online="true">

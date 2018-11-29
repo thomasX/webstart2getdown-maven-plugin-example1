@@ -1,9 +1,0 @@
-Package: example1
-Version: [[version]]
-Section: misc
-Priority: optional
-Architecture: all
-Depends: openjdk-8-jre-lib | openjdk-8-jdk | oracle-java8-install | default-jre
-Maintainer: Some Person <a.nother@zztghh56.com>
-Description: webstart2getdown-maven-plugin-example1
-Distribution: development

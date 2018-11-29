@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>info.margreiter.getdown</groupId>
 	<artifactId>webstart2getdown-maven-plugin-example1</artifactId>
-	<version>1.8.0</version>
+	<version>1.8.2</version>
 
 	<dependencies>
 		<dependency>
@@ -14,7 +14,7 @@
 		<dependency>
 			<groupId>com.threerings.getdown</groupId>
 			<artifactId>getdown-launcher</artifactId>
-			<version>1.8.0</version>
+			<version>1.8.2</version>
 		</dependency>
 	</dependencies>
 
@@ -164,35 +164,38 @@
 			<plugin>
 				<groupId>info.margreiter.getdown</groupId>
 				<artifactId>webstart2getdown-maven-plugin</artifactId>
-				<version>1.8.0</version>
+				<version>1.8.2</version>
 				<executions>
 					<execution>
 						<phase>package</phase>
 						<goals>
 							<goal>getdowntxt</goal>
-							<goal>digest</goal>
+							 <goal>digest</goal>
 						</goals>
 						<configuration>
 							<jnlpfile>${project.build.directory}/jnlp/webstart2getdownExample1.jnlp</jnlpfile>
 							<appbase>https://thomasx.github.io/webstart2getdown-maven-plugin-example1/getdown/</appbase>
 							<appdir>${project.build.directory}/getdown/</appdir>
+							
 							<version></version>
 							<allow_offline>false</allow_offline>
 
 							<ui_background>FF0000</ui_background>
-							<ui_background_image>img/w2gImage.png</ui_background_image>
+							<ui_background_image>img/applicationSplash.png</ui_background_image>
 							<ui_error_background></ui_error_background>
 							<ui_icon>img/w2gicon_16_16.gif</ui_icon>
-							<ui_progress>50,250,600,20</ui_progress>
+							<ui_progress>60,340,600,20</ui_progress>
 							<ui_progress_bar>00FF05</ui_progress_bar>
 							<ui_progress_text>000000</ui_progress_text>
 							<ui_progress_image></ui_progress_image>
-							<ui_status>60,220,580,20</ui_status>
+							<ui_status>60,310,600,20</ui_status>
 							<ui_status_text>000000</ui_status_text>
 							<ui_text_shadow></ui_text_shadow>
 							<ui_hide_decorations>false</ui_hide_decorations>
 							<ui_min_show_seconds>10</ui_min_show_seconds>
+							<!-- error -> classcast exception String[] to String
 							<ui_install_error>https://github.com/thomasX/webstart2getdown-maven-plugin</ui_install_error>
+							 -->
 							<ui_mac_dock_icon>img/w2gicon_16_16.gif</ui_mac_dock_icon>
 
 							<jvmargs>
@@ -202,159 +205,26 @@
 							<appargs>
 								<apparg></apparg>
 							</appargs>
+							
+							<resources>
+								<resource></resource>
+							</resources>
 
-							<!-- we need to override passwords easily from the command line. ${keypass} -->
-							<!-- path or URI (if empty, the default keystore ".keystore"-file 
-								in the user-homedir is used) -->
+							<java_locations>
+								<java_location></java_location>
+							</java_locations>
+							
+							<java_min_version>1080192</java_min_version>
 							<keystore>${project.basedir}/src/main/keys/demokey.jks</keystore>
-							<!-- ${storepass} -->
 							<storepass>changeit</storepass>
-							<!-- alias of the key to use -->
-							<!-- <keypass>123456</keypass> -->
 							<alias>demokey</alias>
 						</configuration>
 					</execution>
 				</executions>
 			</plugin>
-			<!-- create the WindowsInstaller -->
-			<plugin>
-				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>nsis-maven-plugin</artifactId>
-				<version>1.0-alpha-1</version>
-				<executions>
-					<execution>
-						<phase>package</phase>
-						<goals>
-							<goal>generate-headerfile</goal>
-							<goal>make</goal>
-						</goals>
-						<configuration>
-							<makensisBin>makensis.exe</makensisBin>
-							<headerFile>${project.build.directory}/windows/nsis/project.nsh</headerFile>
-							<outputFile>windows/SetupExample1.exe</outputFile>
-							<scriptFile>src/main/installer/windows/nsis/example1.nsi</scriptFile>
-						</configuration>
-					</execution>
-				</executions>
-			</plugin>
-			<plugin>
-				<groupId>org.eclipse.cbi.maven.plugins</groupId>
-				<artifactId>eclipse-winsigner-plugin</artifactId>
-				<version>1.1.5</version>
-			</plugin>
-			<!-- create a Deb for Debian and based systems such as Ubuntu, Mint -->
-			<plugin>
-				<artifactId>jdeb</artifactId>
-				<groupId>org.vafer</groupId>
-				<version>1.2</version>
-				<executions>
-					<execution>
-						<phase>package</phase>
-						<goals>
-							<goal>jdeb</goal>
-						</goals>
-						<configuration>
-						</configuration>
-					</execution>
-				</executions>
-				<dependencies>
-				</dependencies>
-				<configuration>
-					<controlDir>src/main/installer/debian/control</controlDir>
-					<skipPOMs>false</skipPOMs>
-					<installDir>/usr/lib/example1</installDir>
-					<deb>${project.basedir}/target/example1.deb</deb>
-					<dataSet>
-						<data>
-							<type>directory</type>
-							<src>target/getdown</src>
-							<includes>*.*</includes>
-							<mapper>
-								<type>perm</type>
-								<strip>1</strip>
-								<prefix>/usr/lib/example1</prefix>
-								<user>root</user>
-								<group>root</group>
-								<filemode>755</filemode>
-							</mapper>
-						</data>
-						<data>
-							<type>directory</type>
-							<src>${basedir}/src/main/installer/debian/scripts</src>
-							<includes>*</includes>
-							<mapper>
-								<type>perm</type>
-								<strip>1</strip>
-								<prefix>/usr/bin</prefix>
-								<user>root</user>
-								<group>root</group>
-								<filemode>755</filemode>
-							</mapper>
-						</data>
-						<data>
-							<type>directory</type>
-							<src>${project.build.directory}/jnlp/img</src>
-							<includes>w2gImage_256_256.png</includes>
-							<mapper>
-								<type>perm</type>
-								<strip>1</strip>
-								<prefix>/usr/share/pixmaps</prefix>
-								<user>root</user>
-								<group>root</group>
-								<filemode>755</filemode>
-							</mapper>
-						</data>
-						<data>
-							<type>directory</type>
-							<src>${basedir}/src/main/installer/debian/applications</src>
-							<includes>*</includes>
-							<mapper>
-								<type>perm</type>
-								<strip>1</strip>
-								<prefix>/usr/share/applications</prefix>
-								<user>root</user>
-								<group>root</group>
-								<filemode>755</filemode>
-							</mapper>
-						</data>
-					</dataSet>
-				</configuration>
-			</plugin>
-			<!-- create the OSX installer -->
-			<plugin>
-				<groupId>com.agiliumlabs.osxappbundle</groupId>
-				<artifactId>osxappbundle-maven-plugin</artifactId>
-				<version>1.0.1</version>
-				<configuration>
-					<buildDirectory>target/osx/example1</buildDirectory>
-					<bundleName>example1</bundleName>
-					<zipFile>${basedir}/target/osx/example1-app.zip</zipFile>
-					<excludeArtifacts>true</excludeArtifacts>
-					<javaApplicationStub>${basedir}/src/main/installer/osx/osx-stub</javaApplicationStub>
-					<mainClass>info.margreiter.getdown.maven.plugin.example.example1.MyApp</mainClass>
-					<additionalClasspath>
-						<path>getdown.jar</path>
-					</additionalClasspath>
-					<additionalResources>
-						<fileSet>
-							<directory>${basedir}/target/getdown</directory>
-							<includes>
-								<include>**/*</include>
-							</includes>
-						</fileSet>
-					</additionalResources>
-				</configuration>
-				<executions>
-					<execution>
-						<phase>package</phase>
-						<goals>
-							<goal>bundle</goal>
-						</goals>
-					</execution>
-				</executions>
-			</plugin>
 		</plugins>
 	</build>
+	<!-- 
 	<pluginRepositories>
 		<pluginRepository>
 			<id>getdown-maven-github-repo</id>
@@ -365,4 +235,5 @@
 			</snapshots>
 		</pluginRepository>
 	</pluginRepositories>
+	 -->
 </project>
